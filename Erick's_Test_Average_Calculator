@@ -1,0 +1,49 @@
+// Test Score Calculator
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// naming the test scores
+	float Test_Score_1;
+	float Test_Score_2;
+	float Test_Score_3;
+	float Test_Score_4;
+	float Test_Score_5;
+	
+	// naming results
+	float sum;
+	float Average;
+
+	cout << fixed << showpoint;
+	cout << setprecision(1);
+	
+	//promt
+	cout << "First Test Score: ";
+	cin >> Test_Score_1;
+	
+	cout << "Second Test Score: ";
+	cin >> Test_Score_2;
+	
+	cout << "Third Test Score: ";
+	cin >> Test_Score_3;
+	
+	cout << "Fourth Test Score: ";
+	cin >> Test_Score_4;
+	
+	cout << "Fifth Test Score: ";
+	cin >> Test_Score_5;
+
+	// calculation for score total
+	sum = Test_Score_1 + Test_Score_2 + Test_Score_3 + Test_Score_4 + Test_Score_5;
+	
+	// Calculation for average
+	Average = sum / 5;
+	// results
+	cout << "The test score average is ";
+	cout << Average;
+	
+	// return back to system with error cond of 0
+	return 0;
+}

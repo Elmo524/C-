@@ -7,7 +7,7 @@ int main()
 {
 	double R;
 	double L;
-	double N;
+	int N;
 	double Rate;
 	double x;
 	double Payment;
@@ -44,11 +44,11 @@ int main()
 	
 	// results
 	cout << fixed;
-	cout << "Loan Amount: " << setw(10) << "$" << setprecision(2) << L << endl;
+	cout << "Loan Amount: " << setw(10) << "$" << setw(9) << setprecision(2) << L << endl;
 	cout << "Monthly Interst Rate: " << setw(10) << setprecision(2) << Rate << "%" << endl;
-	cout << "Number of Payments: " << setw(10) << setprecision(2) << N << endl;
-	cout << "Monthly Payment: " << setw(10) << "$" << setprecision(2) << Payment << endl;
-	cout << "Amount Paid Back: " << setw(10) << "$" << setprecision(2) << Amount_Paid_Back << endl;
-	cout << "Interest Paid: " << setw(10) << "$" << setprecision(2) << Interest_Paid;
+	cout << "Number of Payments: " << setw(12) << N << endl;
+	cout << "Monthly Payment: " << setw(6) << "$" << setw(9) << setprecision(2) << Payment << endl;
+	cout << "Amount Paid Back: " << setw(5)<< "$" << setw(9) << setprecision(2) << Amount_Paid_Back << endl;
+	cout << "Interest Paid: " << setw(8) << "$" << setw(9) << setprecision(2) << Interest_Paid;
 	
 }

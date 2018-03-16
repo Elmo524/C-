@@ -17,6 +17,12 @@ int main()
 	// define Loan Amount
 	cout << "Enter the loan amount: ";
 	cin >> L;
+	
+	if ( L <= 0)
+	{
+		cout << "You have entered an invalid amount. Please re-enter amount of Loan" << endl;
+		return 1;
+	}
 		
 	// define Annual Interest Rate
 	cout << "Enter the annual interest rate: ";

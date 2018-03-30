@@ -4,23 +4,25 @@ using namespace std;
 
 main()
 {
-	int Days = 1;
-	int Max_Days;
-	int Days_Pay = 1;
+	int days = 1;
+	int max_days;
+	double days_pay = 0.01;
 	double total;
 			
 	cout << "Enter amount of days you have worked within a month: ";
-	cin >>  Max_Days;
+	cin >>  max_days;
 	
-	
-		
-	while (Days <= Max_Days)
+	while (days <= max_days)
 	{
-		Days_Pay = Days_Pay * 2;
+		cout << setw(4) << "day: " << setw(2) << days++ << setw(7) << "$" << setw(8) << days_pay << endl;
 		
-		cout << "Day: " << Days++ << "	" << Days_Pay << "cents" << endl;
+		days_pay = days_pay * 2;
 		
 	}
+	
+	total = days_pay + days_pay;
+	
+	cout << "Total: " << setw(7) << "$" << setw(8) << total << endl;
 	
 	return 0;
 }

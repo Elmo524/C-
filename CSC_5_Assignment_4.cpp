@@ -18,9 +18,8 @@ main()
 		
 		days_pay = days_pay * 2;
 		
+		total = days_pay - 0.01;
 	}
-	
-	total = days_pay + days_pay;
 	
 	cout << "Total: " << setw(7) << "$" << setw(8) << total << endl;
 	

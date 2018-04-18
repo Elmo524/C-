@@ -22,7 +22,7 @@ int main()
 	cout << "How heavy is the object in kilograms?  ";
 	cin >> m;
 	
-	cout << "how many meters per second did the object travel?" << endl;
+	cout << "how many meters per second did the object travel?  ";
 	cin >> v;
 	
 	//function call to fallingDistance

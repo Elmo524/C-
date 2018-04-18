@@ -1,34 +1,35 @@
 #include <iostream>
 #include <iomanip>
-using name space std;
+using namespace std;
 
 //prototype for fallingDistance
-float fallingDistance (float d, float g, float t);
+float fallingDistance (float g, float t);
 
 //prototype for kineticEnergy
-float kineticEnergy ( float ke, float m, float v );
-
-// end result format
-void output_float (d, int w, int x);
+float kineticEnergy (float m, float v);
 
 int main()
 {
+	float t;
+	float m;
+	float v;
+	
 	//your code to read in user input for:
 	//time, mass and velocity.
-	cout << "How many seconds did it take for the object to hit the floor? " << endl;
+	cout << "How many seconds did it take for the object to hit the floor?  ";
 	cin >> t;
 	
-	cout << "How heavy is the object in kilograms? " << endl;
+	cout << "How heavy is the object in kilograms?  ";
 	cin >> m;
 	
 	cout << "how many meters per second did the object travel?" << endl;
 	cin >> v;
 	
 	//function call to fallingDistance
-	float fallingDistance (d, 9.8, t);
+	float d = fallingDistance (9.8, t);
 
 	//function call to kineticEnergy
-	float kineticEnergy (ke, m, v );
+	float ke = kineticEnergy(m, v);
 
 	//output the results in a nice formatted manner
 	cout << "The distance the object fell is: " << d << endl;
@@ -38,13 +39,17 @@ int main()
 }
 
 // implementation of fallingDistance
-float fallingDistance (float d, float g, float t)
+float fallingDistance (float g, float t)
 {
+	float d;
 	d = 1/2 * g * (t*t);
+	return d;
 }
 
 // implementation of kineticEnergy
-float kineticEnergy ( float ke, float m, float v )
+float kineticEnergy (float m, float v)
 {
+	float ke;
 	ke = 1/2 * m * (v*v);
+	return ke;
 }

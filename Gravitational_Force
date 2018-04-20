@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+double gravitational_force(double m1, double m2, double d)
+{
+	// compute G*m1*m2/d*d
+	//and return the result.
+	double G;
+	G = 6.673e-8
+	
+	double F;
+	F = G*m1*m2/d*d
+	return F;
+}

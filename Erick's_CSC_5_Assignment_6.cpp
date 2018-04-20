@@ -45,9 +45,9 @@ int main()
 
 	//output the results in a nice formatted manner
 	cout << endl;
-	cout << "The distance the object fell is: " << d << " meters" << endl;
+	cout << "The distance the object fell is: " << setw(32) << d << " meters" << endl;
 	cout << endl;
-	cout << "The amount of kinetic energy the object has is: " << ke << endl;
+	cout << "The amount of kinetic energy the object has is: " << setw(14) << ke << endl;
 	cout << endl;
 	cout << "The amount of gravitaional force between the two masses is: " << gf << endl;
 	

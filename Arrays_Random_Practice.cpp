@@ -9,7 +9,7 @@ int my_rand (int max)
 	static bool seeded=false;
 	if (!seeded)
 	{
-		rand(time(0));
+		srand(time(0));
 		seeded=true;
 	}
 	return (rand()%max)+1;
@@ -35,7 +35,7 @@ int main()
 	for (int i=0; i<number_of_sides; i++) sides[i]=0;
 	
 	int trials;
-	cout << "How many trials do you want to simulate (max: 1000000000)? " 
+	cout << "How many trials do you want to simulate (max: 1000000000)? " ;
 	cin >> trials;
 	
 	if ( trials > 1000000000 )
@@ -52,9 +52,9 @@ int main()
 	}
 	
 	// output the result
-	for(int i=0; i<number_of_sies; i++)
+	for(int i=0; i<number_of_sides; i++)
 	{
 		cout << "Side" << i+1 << ": " << sides[i];
-		cout << "(" << *100(double)(sides[i])/(traials) << "%)" << endl;
+		cout << "(" << 100*(double)(sides[i])/(trials) << "%)" << endl;
 	}
 }

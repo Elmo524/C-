@@ -38,7 +38,7 @@ double average(double a[],int sz)
 {
 	double sum = 0.0;
 	for(int i=0; i<sz; i++)
-		sum+a[i];
+		sum+=a[i];
 	return sum/sz;
 }
 

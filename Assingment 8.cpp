@@ -42,6 +42,14 @@ double average(double a[],int sz)
 	return sum/sz;
 }
 
+double sum(double a[],int sz)
+{
+	double sum = 0.0;
+	for(int i=0; i<sz; i++)
+		sum+=a[i];
+	return sum;
+}
+
 double std_sample(double a[], int sz)
 {
 	double mu=average(a,sz);
@@ -72,6 +80,7 @@ int main()
 	
 	cout << endl;
 	
-	cout << "Sum of the x values is:" << average(x,num);
+	cout << "Sum of the x values is: " << sum(x,num) << endl;
+	cout << "Sum of the y values is: " << sum(y,num) << endl;
+	
 }
-

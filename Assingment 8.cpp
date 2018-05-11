@@ -72,6 +72,6 @@ int main()
 	
 	cout << endl;
 	
-	cout << "Sum of the x values is:" << double average(x,num);
+	cout << "Sum of the x values is:" << average(x,num);
 }
 
